@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div>
+  <h1>Design a Spirograph</h1>
+  <p>Instructions for creating a graph:
+    <ul>
+      <li>Input whole numbers for angle, Outer radius, inner radius, and points.</li>
+      <li>Combine graphs is an option that allows you to continuously overlap different graphs you make.</li>
+      <li>Click the "Submit" button and off you go!</li>
+    </ul>
+    <br>Rules for creating a graph:
+    <ul>
+      <li>Outer radius cannot equal inner radius</li>
+      <li>Input for angle/inner/outer must be a whole number</li>
+    </ul>
+  </p>
+  <form method="POST" action="/form">     
+      <label>Angle: </label><input name="angle" type="text" value="" />
+      <label>Outer Radius: </label><input name="outRadius" type="text" value="" />
+      <label>Inner Radius: </label><input name="inRadius" type="text" value="" />
+      <label>Points (More points = Smoother Image): </label><input name="points" type="text" value="" />
+      <label>Combine Graphs:</label>
+      <select name="combine" id="combine">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <input type="submit" value="submit" />
+  </form>
+</div>
+</body>
+</html>

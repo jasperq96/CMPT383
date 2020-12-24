@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="home.css">
+</head>
+<div>
+  <h1>Graph Details</h1>
+  <script>
+      function goBack() {
+        window.history.back();
+      }
+  </script>
+  <p>Radius of outer Circle: {{.Outer}}</p>
+  <p>Radius of moving circle: {{.Inner}}</p>
+  <p>Angle of Drawing: {{.Angle}}</p>
+  <p>Points used: {{.Points}}<br><br><button onclick="goBack()">Graph Again</Re-graph></button><br><br><a href="./plot.png" download="plot.png">Download Graph</a></p>
+</div>
+<img src='./plot.png' alt='graph' style='width:800px;height:800px;'>
